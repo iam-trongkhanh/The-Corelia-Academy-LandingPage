@@ -13,7 +13,7 @@ export default function Header() {
         className="w-full bg-slate-100 dark:bg-slate-800"
         suppressHydrationWarning
       >
-        <div className="mx-auto flex max-w-7xl items-center justify-end px-4 sm:px-6 lg:px-8 py-2">
+        <div className="flex items-center justify-end px-4 sm:px-6 lg:px-8 xl:px-12 py-2">
           <div className="flex items-center gap-6 text-xs font-medium text-slate-600 dark:text-slate-300">
             <Link
               href="#learners"
@@ -32,8 +32,11 @@ export default function Header() {
       </div>
 
       {/* Main header */}
-      <header className="sticky top-0 z-50 w-full border-b border-solid border-slate-200 dark:border-slate-700 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
-        <div className="mx-auto flex max-w-7xl items-center justify-between whitespace-nowrap px-4 sm:px-6 lg:px-8 py-4">
+      <header
+        className="sticky top-0 z-50 w-full border-b border-solid border-slate-200 dark:border-slate-700 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md"
+        suppressHydrationWarning
+      >
+        <div className="flex items-center justify-between whitespace-nowrap px-4 sm:px-6 lg:px-8 xl:px-12 py-4">
           {/* Logo and name */}
           <Link
             href="/"
@@ -75,12 +78,12 @@ export default function Header() {
               >
                 Contact
               </Link>
-              <Link
-                href="/profile"
+              <a
+                href="http://localhost:5173/profile"
                 className="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors"
               >
                 View Profile
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -108,13 +111,13 @@ export default function Header() {
               >
                 Contact
               </Link>
-              <Link
-                href="/profile"
+              <a
+                href="http://localhost:5173/profile"
                 className="block text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 View Profile
-              </Link>
+              </a>
             </div>
           </div>
         )}

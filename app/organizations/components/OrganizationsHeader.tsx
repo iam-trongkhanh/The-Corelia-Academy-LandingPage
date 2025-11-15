@@ -64,12 +64,12 @@ export default function OrganizationsHeader() {
               >
                 <span className="truncate">Contact</span>
               </Link>
-              <Link
-                href="/profile"
+              <a
+                href="http://localhost:5173/profile"
                 className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-border-light dark:bg-border-dark text-text-light-primary dark:text-text-dark-primary text-sm font-bold leading-normal tracking-[0.015em] hover:bg-border-light/80 dark:hover:bg-border-dark/80 transition-colors"
               >
                 <span className="truncate">View Profile</span>
-              </Link>
+              </a>
             </div>
           </div>
         </header>

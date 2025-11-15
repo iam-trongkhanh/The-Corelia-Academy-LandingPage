@@ -6,6 +6,7 @@ export default function CTASection() {
       id="organizations"
       className="bg-primary/10 dark:bg-primary/20 rounded-xl p-10 lg:p-16"
       aria-labelledby="cta-heading"
+      suppressHydrationWarning
     >
       <div className="flex flex-col items-center text-center gap-4">
         <h2

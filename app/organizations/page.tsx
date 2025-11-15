@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 export default function OrganizationsPage() {
   return (
     <div
-      className="relative flex w-full flex-col group/design-root overflow-x-hidden"
+      className="relative flex w-full flex-col group/design-root overflow-x-hidden bg-background-light dark:bg-background-dark min-h-screen"
       suppressHydrationWarning
     >
       <div className="layout-container flex h-full grow flex-col">

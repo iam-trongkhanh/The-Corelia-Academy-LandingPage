@@ -142,6 +142,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} font-display antialiased`}
         suppressHydrationWarning
+        style={{ minHeight: "100vh" }}
       >
         <script
           type="application/ld+json"
